@@ -42,7 +42,7 @@ fn main() {
     let args_obj = Args::new(args, std::env::args().collect());
 
     if args_obj.contains("test") {
-        println!("Test args: {:?}", args_obj.get("test").args)
+        println!("Test args: {:?}", args_obj.get("test").unwrap().args)
     }
 
     if args_obj.contains("about_arg") {
