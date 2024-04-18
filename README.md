@@ -32,11 +32,20 @@ fn main() {
             short: "v",
             long: "version"
         }),
+        arg!({
+            name: "test",
+            short: "t",
+            long: "test"
+        }),
     ];
 
     let args_obj = Args::new(args, std::env::args().collect());
 
-    if args_obj.contains("help_arg") {
+    if args_obj.contains("test") {
+        println!("Test args: {:?}", args_obj.get("test").args)
+    }
+
+    if args_obj.contains("about_arg") {
         println!("Help");
     }
 
