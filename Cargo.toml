@@ -1,6 +1,6 @@
 [package]
 name = "oargs"
-description = "A simple log output system written in Rust"
+description = "Argument Parser"
 version = "0.1.0"
 authors = ["Ouki76"]
 repository = "https://github.com/Ouki76/oargs"
